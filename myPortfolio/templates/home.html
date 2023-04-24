@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="widtr=device-widtr, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+  <header>
+    <img src ="{% static 'images/me.jpg' %}"></img>
+    <nav>
+      <span class="right">
+      <a href="#home" class="active"><span id="accent">1.</span>  Home</a>
+      <a href="#languages"><span id="accent">2.</span>  Languages</a>
+      <a href="#projects"><span id="accent">3.</span> Projects</a>
+      <a href="#contact"><span id="accent">4.</span>  Contact</a>
+      <a href="{% static 'resume/resume.pdf'%}" target="_blank"><span id="accent">Resume</a>
+      </span>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="container reveal">
+      <h1>Hi! My name is</h1>
+        <h2><span id="name">MichaelAngelo</span></h2>
+        <p>I am a <span id="accent">Software Developer</span>, looking forward to hone my skills
+          and broaden my experience even further. Experienced in both <span id="accent">FRONTEND and BACKEND development</span>, looking to
+          start some game projects on the side. A self-driven developer with a passion for all technology!
+        </p>
+    </div>
+  </section>
+  <section id="languages">
+    <div class="container reveal">
+      <div class="text-container">
+        <div class="text-box">
+          <h1 id="text"><span id ="accent">Known Langauges</span></h2><hr>
+            <table class="center">
+              <tbody>
+              <tr>
+                <td><img src ="{% static 'images/mysql-svgrepo-com.png' %}"></img>MySQL</td>
+                <td><img src ="{% static 'images/sqlite-svgrepo-com.png' %}"></img>SQLite</td>
+                <td><img src ="{% static 'images/html-124-svgrepo-com.png' %}"></img>HTML</td>
+                <td><img src ="{% static 'images/css3-02-svgrepo-com.png' %}"></img>CSS</td>
+                <td><img src ="{% static 'images/python-127-svgrepo-com.png' %}"></img>Python</td>
+              </tr>
+              <tr>
+                <td><img src ="{% static 'images/java-file-svgrepo-com.png' %}"></img>Java</td>
+                <td><img src ="{% static 'images/javascript-155-svgrepo-com.png' %}"></img>Javascript</td>
+                <td><img src ="{% static 'images/upload-window-svgrepo-com.png' %}"></img>C++</td>
+                <td><img src ="{% static 'images/white-book-svgrepo-com.png' %}"></img>C#</td>
+                <td><img src ="{% static 'images/window-svgrepo-com.png' %}"></img>C</td>
+              </tr>
+              <tr>
+                <td><img src ="{% static 'images/scala-svgrepo-com.png' %}"></img>Scala</td>
+                <td><img src ="{% static 'images/django-svgrepo-com.png' %}"></img>Django</td>
+                <td><img src ="{% static 'images/javascript-155-svgrepo-com.png' %}"></img>React.js</td>
+                <td><img src ="{% static 'images/typescript-official-svgrepo-com.png' %}"></img>Typescript</td>
+                <td><img src ="{% static 'images/postgresql-svgrepo-com.png' %}"></img>PostgreSQL</td>
+              </tr>
+            </tbody>
+            </table>
+
+            <h1 id="text"><span id ="accent">Known Skills</span></h2><hr>
+              <table class="center">
+                <tbody>
+                <tr>
+                  <td><img src ="{% static 'images/mysql-svgrepo-com.png' %}"></img>Scrum</td>
+                  <td><img src ="{% static 'images/sqlite-svgrepo-com.png' %}"></img>Agile</td>
+                  <td><img src ="{% static 'images/html-124-svgrepo-com.png' %}"></img>Microsoft Offices</td>
+                  <td><img src ="{% static 'images/css3-02-svgrepo-com.png' %}"></img>GitHub</td>
+                  <td><img src ="{% static 'images/python-127-svgrepo-com.png' %}"></img>Visual Studio</td>
+                </tr>
+              </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container reveal">
+      <h1>Projects</h1>
+      <div class="text-container">
+        <div class="text-box">
+          <img src = "{% static 'images/tool.png' %}" id="text_project"></img>
+          <h3>Tool Ownership Tracker</h3>
+          <h5>https://github.com/PressedPink/ToolOwnershipTracker<h5>
+          <p>
+            A Django app that would allow school systems to have a schedule system of students and their
+            courses.
+          </p>
+        </div>
+        <div class="text-box">
+          <img src = "{% static 'images/weather.png' %}" id="text_project"></img>
+          <h3>Weather App</h3>
+          <h5>https://github.com/kino174/Weather-App<h5>
+          <p>
+            A web app that would take the zip code, city or coordinates and give a 5-day weather forecast.
+          </p>
+        </div>
+        <div class="text-box">
+          <img src = "{% static 'images/clock.png' %}" id="text_project"></img>
+          <h3>Teacher Assistance Scheduler</h3>
+          <h5>https://github.com/kino174/TA_Scheduler-1<h5>
+          <p>
+            A Django app that would allow companies to be able to keep track of their tools and the status of
+            them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container reveal">
+      <h2>Contact & Links</h2>
+      <div class="text-container">
+        <div class="text-box">
+          <a href="https://www.linkedin.com/in/mike-tulod-86195624b/"><img src = "{% static 'images/linkedinlogo.png' %}" id="contact"></img> </a>
+          <a href="https://github.com/kino174"><img src = "{% static 'images/githublogo.png' %}" id="contact"></img></a>
+          <a href="https://www.facebook.com/michaelangeloctulod/"><img src = "{% static 'images/facebooklogo.png' %}" id="contact"></img></a>
+          <a href="https://www.discordapp.com/users/108417296313131008/"><img src = "{% static 'images/discordlogo.png' %}" id="contact"></img></a>
+          <a href="mailto:email@example.com"><img src = "{% static 'images/mail.png' %}" id="contact"></img></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="{% static 'javascript/scroll.js' %}">
+  </script> 
+</body>
