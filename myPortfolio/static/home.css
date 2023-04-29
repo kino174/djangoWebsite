@@ -40,7 +40,7 @@ background-color:rgb(5, 16, 26);
  }
 
  body p{
-font-size:20px;
+font-size:30px;
 width:95%;
 margin:auto;
 text-align: center;
@@ -218,16 +218,12 @@ section .text-container .text-box h5 {
   }
 
   section .text-container .text-box #contact {
-    height:8vh;
-    width:8vh;
-    margin-left:15vh;
-    margin-right:15vh;
+    height:4vh;
+    width:4vh;
+    margin-left:7vh;
+    margin-right:7vh;
     }
 
-    section .text-container .text-box #contactfont {
-      font-size:3vh;
-      width:fit-content
-      }
 
 @media (max-width: 900px) {
 section h1 {
